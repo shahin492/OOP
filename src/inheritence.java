@@ -1,21 +1,21 @@
-class Alamin{
-    protected String type = "Animal";
+class Vehicle2 {
+    protected String brand = "Generic Vehicle";
 
-    void display() {
-        System.out.println("This is an animal.");
+    void start() {
+        System.out.println("Vehicle is starting...");
     }
 }
 
-class Dog1 extends Alamin {
-    void bark() {
-        System.out.println(type + " says Woof!");
+class Car5 extends Vehicle2 {
+    void drive() {
+        System.out.println(brand + " is driving...");
     }
 }
 
-public class inheritence {
+public class inheritence{
     public static void main(String[] args) {
-        Dog1 d = new Dog1();
-        d.display();
-        d.bark();
+        Car5 myCar = new Car5();
+        myCar.start();   // Method from Vehicle
+        myCar.drive();   // Method from Car
     }
 }

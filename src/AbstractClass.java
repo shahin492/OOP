@@ -1,21 +1,32 @@
-abstract class Animal1 {
-    abstract void makeSound();
+abstract class Vehicle {
+    abstract void startEngine();
 
-    void sleep() {
-        System.out.println("Sleeping...");
+    void stopEngine() {
+        System.out.println("Engine stopped.");
     }
 }
 
-class Dog extends Animal1 {
-    void makeSound() {
-        System.out.println("Bark Bark");
+ class Car1 extends Vehicle {
+    void startEngine() {
+        System.out.println("Car engine started.");
     }
 }
 
-public class AbstractClass{
+class Bike extends Vehicle {
+    void startEngine() {
+        System.out.println("Bike engine started.");
+    }
+}
+
+public class AbstractClass {
     public static void main(String[] args) {
-        Dog d = new Dog();
-        d.makeSound();
-        d.sleep();
+        Vehicle car1 = new Car1();
+        Vehicle bike = new Bike();
+
+        car1.startEngine();
+        car1.stopEngine();
+
+        bike.startEngine();
+        bike.stopEngine();
     }
 }
