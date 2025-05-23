@@ -4,7 +4,7 @@ import java.util.Scanner;
 import exceptions.InvalidAgeException;
 import exceptions.InvalidDepartmentException;
 
-public class setText {
+public class Test {
 
     public static void validateAge(int age) throws InvalidAgeException {
         if (age < 18) {
